@@ -1,13 +1,13 @@
 const modalMenu = document.getElementById("modal-menu");
-const modalOpenButton = document.getElementById("modal-open-button");
 const modalCloseButton = document.getElementById("modal-close-button");
+const modalOpenButton = document.getElementById("modal-open-button");
 
 
-modalOpenButton.addEventListener("click", function () {
+modalCloseButton.addEventListener("click", function () {
     modalMenu.classList.remove("modal-close")
 });
 
 
-modalCloseButton.addEventListener("click", function(){
+modalOpenButton.addEventListener("click", function(){
     modalMenu.classList.add("modal-close")
 });

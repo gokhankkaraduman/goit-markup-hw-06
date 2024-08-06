@@ -40,6 +40,10 @@ section{
     display:flex;
     align-items: center;
 }
+.header-address{
+    display:flex;
+    align-items: center;
+}
 .navbar-list{
     display:flex;
     gap:40px;
@@ -74,13 +78,15 @@ section{
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--slate);
-    padding:24px 0;
 }
-.address-list-item,.header-list-item{
+.navbar-list-item{
     padding:24px 0;
 }
 .header-logo{
     color: var(--navy-blue);
+}
+.hamburger-menu{
+    display:none;
 }
 /* Section Hero Styles */
 .hero-section{
@@ -103,7 +109,7 @@ section{
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
-    max-width:515px;
+    max-width:496px;
     margin:0 auto;
     margin-bottom:48px;
 }
@@ -391,6 +397,7 @@ section{
 /* Modal Window Style */
 .modal-window{
     position: fixed;
+    display:none;
     top:0;
     left:0;
     width: 100%;
@@ -545,5 +552,5 @@ section{
     margin:0 auto;
 }
 .modal-close{
-    display:none;
+    display:block;
 }
