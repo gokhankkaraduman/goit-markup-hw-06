@@ -1,80 +1,96 @@
-@media (max-width: 768px){
+@media (min-width: 768px) and (max-width:1024px){
+    /* General Style Classes are here */
     .container{
-        width:768px;
+        max-width: 768px;
+        margin:0 auto;
     }
     section{
         padding:96px 0;
     }
-    .logo{
-        margin:initial;
-        margin-right:120px;
-    }
-    .address-list-link{
-        font-family: var(--font-family);
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 117%;
-        letter-spacing: 0.04em;
-    }
-    .address-list{
-        flex-direction: column;
-        gap:12px;
-    }
-    .hero-section{
-        padding:120px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Background-img-tablet.jpg);
-    }
-    .svg-content{
+    .hamburger-menu,.hamburger-menu-open{
         display:none;
     }
-    .second-section-list{
-        display:flex;
-        flex-wrap:wrap;
-        gap:24px;
-    }
-    .second-section-list-item{
-        width:calc((100% - 36px) / 2);
-    }
-    .second-section .subtitle{
-        font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 111%;
-        letter-spacing: 0.02em;
-        color: var(--navy-blue);
-    }
-    .second-section .text{
-        text-align: start;
-        font-weight: 500;
-    }
-    .third-section-list{
-        padding: 0 108px;
-        flex-wrap:wrap;
-        row-gap: 64px;
-    }
-    .third-section-list-item{
-        width:calc((100% - 24px) / 2);
-    }
-    .forth-section-list{
-        column-gap: 24px;
-        row-gap:72px;
-    }
-    .forth-section-list-item{
-        width: calc((100% - 24px) / 2);
-    }
-    .footer{
-        padding:96px 108px;
-    }
-    .footer-container{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: start;
-    }
-    .footer-social-media-wrapper{
-        margin:24px;
-    }
-    .footer-form-wrapper{
-        margin:initial;
-        margin-top:72px;
-    }
+    /* For Hidden İtems */
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+        }
+        /*---------------- HEADER STYLES ARE HERE-------------- */
+        
+        .address-list{
+            display:flex;
+            flex-direction: column;
+            gap:12px;
+        }
+        /* ---------------HERO SECTİON STYLES ARE HERE--------------- */
+        .section-hero{
+            padding:112px 0;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Background-img-tablet.jpg);
+        }
+        .hero-content{
+            gap:36px;
+        }
+        .svg-wrapper{
+            display:none;
+        }
+        .second-section-list{
+            flex-wrap: wrap;
+            gap:24px;
+        }
+        .second-section-list-item{
+            width:calc((100% - 36px) / 2);
+        }
+        .second-section-list-item .subtitle{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 111%;
+            text-align: start;
+        }
+        .second-section-text{
+            font-weight: 500;
+        }
+        /*--------------------THİRD SECTİON STYLES ARE HERE--------------- */
+        .third-section-list{
+            padding: 0 76px;
+            flex-wrap: wrap;
+            row-gap:64px;
+        }
+        .third-section-list-item{
+            width: calc((100% - 24px) / 2);
+        }
+        .third-section-list-item img{
+            width: 100%;
+        }
+        /* --------------------FORTH SECTİON STYLES ARE HERE---------------- */
+        .forth-section-list{
+            row-gap:72px;
+        }
+        .forth-section-list-item{
+            width: calc((100% - 24px) / 2);
+        }
+        /* ---------------------FOOTER STYLES ARE HERE----------------------- */
+        .footer{
+            padding:96px 0;
+        }
+        .footer-container{
+            max-width: 496px;
+            display:flex;
+            flex-direction: column;
+            gap:72px;
+            align-items: baseline;
+        }
+        .footer-logo-social-media-wrapper{
+            gap:24px;
+        }
+        .footer-form{
+            justify-content: start;
+        }
 }
